@@ -21,7 +21,7 @@ npm install &>>/tmp/roboshop.log
 echo -e "\e[36m>>>>>>>>>>>>>>>>>>>> Install Mongo Client    <<<<<<<<<<<<<<<<\e[0m" | tee -a /tmp//tmp/roboshop.log
 yum install mongodb-org-shell -y &>>/tmp/roboshop.log
 echo -e "\e[36m>>>>>>>>>>>>>>>>>>>> Load Catalogue Schema    <<<<<<<<<<<<<<<<\e[0m" | tee -a /tmp//tmp/roboshop.log
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js &>>/tmp/roboshop.log
+mongo --host mongodb.sowmyakotnidevops.online </app/schema/catalogue.js &>>/tmp/roboshop.log
 systemctl daemon-reload &>>/tmp/roboshop.log
 systemctl enable catalogue &>>/tmp/roboshop.log
 systemctl restart catalogue &>>/tmp/roboshop.log
